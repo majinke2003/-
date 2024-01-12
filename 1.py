@@ -106,7 +106,7 @@ def dice_loss(logits, target):
     return dice_loss
 
 
-loss_last = 99999
+loss_last = 100000
 best_model_name = 'x'
 # 记录loss变化
 for epoch in range(1, epochs + 1):
