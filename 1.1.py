@@ -49,12 +49,6 @@ traindata = MyDataset(train_path)
 import matplotlib.pyplot as plt
 
 o_img, l_img = traindata[np.random.randint(0, 2000)]
-plt.subplot(1, 2, 1)
-plt.imshow(o_img.permute(1, 2, 0))
-plt.subplot(1, 2, 2)
-plt.imshow(l_img.permute(1, 2, 0))
-print("原始图片张量的形状:", o_img.shape)
-print("标签图片张量的形状:", l_img.shape)  # ([1, 320, 640]) 其中 1 表示分类类别，我们为2分类任务,类别表示为01
 
 # 配置模型超参数
 # 模型保存的路径
